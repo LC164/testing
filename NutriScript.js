@@ -2,6 +2,7 @@ function updateFileName() {
       const fileInput = document.getElementById('imageInput');
       const fileNameSpan = document.getElementById('fileName');
       
+      
       if (fileInput.files.length > 0) {
         fileNameSpan.textContent = fileInput.files[0].name;
         fileNameSpan.classList.add('has-file');
@@ -108,4 +109,5 @@ function updateFileName() {
         console.error(err);
         return "Sorry, I encountered an error fetching nutrition facts.";
       }
+
     }
